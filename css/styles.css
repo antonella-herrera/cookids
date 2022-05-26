@@ -148,6 +148,16 @@ img{
     flex-wrap: wrap;
 }
 
+.card-img-funcion{
+    width: 153px;
+    display: block;
+    margin: 0 auto;
+}
+.funcion .card img{
+    width: 153px;
+    display: block;
+    margin: 0 auto;
+}
 
 /*galeria*/
 .galeria {
@@ -159,7 +169,7 @@ img{
 /*TESTIMONIOS*/
 /*CARRUSEL*/
 .testimonios .carousel{
-    height: 70vh;
+    height: 90vh;
 } 
 
 .testimonios-cards{
@@ -175,6 +185,10 @@ img{
     color:#F7A940
 }
 
+.testimonio-carrusel{
+    background-color: #89CBC0;
+    margin-bottom: 1em;
+}
 
 @media screen and (min-width:768px) {
     .galeria {
@@ -212,4 +226,8 @@ img{
     justify-content: end;
     align-items: center;
 }
+
+.testimonios .carousel{
+    height: 70vh;
+} 
 }
