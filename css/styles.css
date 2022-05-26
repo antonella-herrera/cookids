@@ -11,6 +11,9 @@ section{
     padding: 4em 0;
 
 }
+header{
+    position: sticky;
+}
 body {
     background-color: #FDF5EF;
     font-family: 'Poppins', sans-serif;
@@ -111,13 +114,11 @@ img{
 
 /*PORTADA*/
 .portada {
-    background-image: url(../img/portada.webp);
     height: 100vh;
-    background-position: bottom;
-    background-size: cover;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portada h2 {
@@ -126,9 +127,6 @@ img{
     font-weight: 400;
 }
 
-.img-portada {
-    display: none;
-}
 
 .portada-texto {
     padding: 2em;
@@ -188,6 +186,18 @@ img{
         margin-left: 1em;
         width: 50%;
     }
-    
-
+    .portada{
+        flex-direction: row;
+    }
+    .img-portada{
+        width: 50%;
+    }
+.portada-texto{
+    width: 50%;
+}
+.portada-texto{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 }
