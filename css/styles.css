@@ -55,6 +55,14 @@ header, footer {
 .btn {
     margin-right: 1em;
 }
+.separador{
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
 
 .boton-relleno {
     background-color: #F7A940;
@@ -158,6 +166,7 @@ img{
     flex-direction: column;
     text-align: center;
     padding: 1em;
+    height: 70vh;
 }
 .texto-testimonio span{
     color: #acaaa8;
@@ -165,6 +174,8 @@ img{
 .bi-star-fill{
     color:#F7A940
 }
+
+
 @media screen and (min-width:768px) {
     .galeria {
         grid-template-columns: repeat(2,1fr);
@@ -188,6 +199,7 @@ img{
     }
     .portada{
         flex-direction: row;
+        padding: 0;
     }
     .img-portada{
         width: 50%;
