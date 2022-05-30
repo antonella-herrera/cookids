@@ -1,0 +1,36 @@
+/*****GENERALES*/
+section{
+    padding: 4em 0;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/*botones*/
+.btn {
+    margin-right: 1em;
+    border-radius: 1.5rem;
+}
+
+.boton-relleno {
+    background-color: #F7A940;
+    color: #FDF5EF;
+}
+
+.boton-outline {
+    border: 2px solid #F7A940;
+    color: #F7A940;
+}
+
+
+.separador{
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}

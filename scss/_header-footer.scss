@@ -1,0 +1,14 @@
+/*header*/
+
+header{
+    /*a{ elegir tipo
+
+    }*/
+    position: sticky;
+    @media (min-width: 992px) {
+        .navbar-collapse{
+            flex-grow: unset;
+        }  
+    }
+}
+

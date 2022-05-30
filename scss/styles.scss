@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+@import 'variables-mixins';
+@import 'tipografias';
+@import 'generales';
+@import 'header-footer';
+
 
 .portada{
-    background-image: url(../img/portada.jpg );
+    background-image: url(../img/portada.jpg);
     height: 100vh;
-    
 }
+

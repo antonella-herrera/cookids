@@ -1,0 +1,17 @@
+$color-pricipal:#000;
+$color-secundario:#fff;
+$color-teriario: #f0f0;
+
+//mixin flex
+@mixin flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction:$direction ;
+    justify-content: $justify;
+    align-items: $aling ;
+    
+}
+
+@mixin fondo ($fondo, $color-tipo) {
+    background-color: $fondo;
+    color: $color-tipo;
+}

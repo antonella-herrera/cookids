@@ -11,9 +11,7 @@ section{
     padding: 4em 0;
 
 }
-header{
-    position: sticky;
-}
+
 body {
     background-color: #FDF5EF;
     font-family: 'Poppins', sans-serif;
@@ -190,6 +188,16 @@ img{
     margin-bottom: 1em;
 }
 
+
+/*form*/
+
+.form-control{
+    margin-top: 1em;
+}
+
+form .btn{
+    margin-top: 1em;
+}
 @media screen and (min-width:768px) {
     .galeria {
         grid-template-columns: repeat(2,1fr);
