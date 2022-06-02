@@ -13,7 +13,7 @@ section{
 }
 
 body {
-    background-color: #FDF5EF;
+    background-color: FDF5EF;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,6 +26,7 @@ a:visited {
 h1,
 h2 {
     text-transform: uppercase;
+    color: #FF5B7C;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h2 {
 }
 
 header, footer {
-    background-color: #F5B3C4;
+    background-color: #F8F5F4;
 }
 
 .btn {
@@ -63,13 +64,13 @@ header, footer {
 }
 
 .boton-relleno {
-    background-color: #F7A940;
-    color: #FDF5EF;
+    background-color: #EADBF1;
+    color: #FF5B7C;
 }
 
 .boton-outline {
-    border: 2px solid #F7A940;
-    color: #F7A940;
+    border: 2px solid #FF5B7C;
+    color: #FF5B7C;
 }
 
 
@@ -116,15 +117,18 @@ header, footer {
 img{
     max-width: 100%;
 }
+
+.fondo-amarillo{
+    background-image: url(../img/fondo-amarillo.png);
+    background-position: center;
+    background-size: cover;
+
+}
 /*--------MOBILE---------*/
 
 /*PORTADA*/
 .portada {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .portada h2 {
