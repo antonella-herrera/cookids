@@ -36,6 +36,9 @@ header {
     background-color: #F8F5F4;
 }
 
+p span{
+    font-weight: 500;
+}
 
 /*botones*/
 .btn {
@@ -221,6 +224,7 @@ footer {
 }
 
 .testimonio-carrusel {
+    margin: 0 auto;
     margin-bottom: 1em;
 }
 
@@ -286,6 +290,9 @@ form .btn {
 
     .testimonios .carousel {
         height: 70vh;
+    }
+    .testimonio-carrusel {
+        width: 70%;
     }
 
 }
