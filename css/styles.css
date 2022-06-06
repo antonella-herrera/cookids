@@ -112,7 +112,7 @@ header {
     font-size: 3rem;
 }
 
-.funcion .card {
+.funcion .card, .beneficios .card {
     border: none;
     background-color: transparent;
     box-shadow: none;
@@ -191,12 +191,6 @@ footer {
     flex-wrap: wrap;
 }
 
-.card-img-funcion {
-    width: 153px;
-    display: block;
-    margin: 0 auto;
-}
-
 .funcion .card img {
     width: 153px;
     display: block;
@@ -241,6 +235,13 @@ form .btn {
     margin-top: 1em;
 }
 
+
+
+/*///////*/
+
+.iconos-pago{
+    width: 80px;
+}
 @media screen and (min-width:768px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
