@@ -40,6 +40,13 @@ img {
   background-repeat: no-repeat;
 }
 
+.fondo-rosa {
+  background-image: url("../img/fondo-rosa.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .fondo-amarillo-chico {
   background-image: url(../img/fondo-amarillo-chico.png);
   background-repeat: no-repeat;

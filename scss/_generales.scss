@@ -33,6 +33,9 @@ img {
     @include fondoimg( '../img/fondo-amarillo.png', center, cover );
 }
 
+.fondo-rosa {
+    @include fondoimg( '../img/fondo-rosa.png', bottom, cover );
+}
 .fondo-amarillo-chico {
     background-image: url(../img/fondo-amarillo-chico.png);
     background-repeat: no-repeat;
