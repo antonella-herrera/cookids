@@ -1,11 +1,26 @@
 /*INICIO*/
 .inicio {
-
+    h2{
+        text-align: start;
+    }
     ul {
         padding-right: 0.5rem;
-        /*
-    list-style-image: url('../img/lista.png');
-    list-style-position: outside;*/
+        list-style-type: none;
+        line-height: 24px;
+        li{
+            display: flex;
+            &::before{
+                content: url("../img/lista.svg");
+                width: 37px;
+                margin-right: 14px;
+            }
+            h3{
+                margin-bottom: 0;
+            }
+            
+        }
+
+        
     }
 
     >div {
@@ -76,3 +91,51 @@
      max-width: 455px;
     }
  }
+
+.marcas{
+    border-top:1px solid rgba(85, 68, 68, 0.5); ;
+    border-bottom: 1px solid rgba(85, 68, 68, 0.5);;
+    padding: 20px 0;
+    >div{
+        max-width: 846px;
+        margin: 0 auto;
+    }
+}
+
+.comparti{
+    padding: 2.5em 0;
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        div:first-child {
+            margin: 0 auto;
+            @media screen and (min-width:920px) {
+                margin: 0;
+            }
+
+        }
+        @media screen and (min-width:920px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            padding:0.5rem;
+            @media screen and (min-width:920px) {
+                text-align: start;
+                padding-left: 0;
+            }
+        }
+        .texto{
+            text-align: center;
+            @media screen and (min-width:920px) {
+                text-align: start;
+                width: 50%;
+                max-width: 430px;
+            }
+            
+        }
+    }
+
+}

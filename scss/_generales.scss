@@ -5,7 +5,7 @@ body {
     font-family: $tipo-texto;
 }
 
-section{
+section, .galeria{
     padding:1.875rem 0;
 }
 
@@ -34,7 +34,7 @@ img {
 }
 
 .fondo-amarillo-chico {
-    background-image: url(../img/chico-amarillo.png);
+    background-image: url(../img/fondo-amarillo-chico.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;

@@ -17,3 +17,12 @@
     border: 2px solid $color-interacciones;
     color: $color-interacciones;
 }
+
+button{
+    background-color: transparent;
+    border: none;
+    color: $color-interacciones;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+}

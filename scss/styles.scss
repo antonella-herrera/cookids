@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700&family=Roboto:ital,wght@1,100&family=Rubik:wght@700;900&display=swap');
 
 @import 'variables-mixins';
 @import 'generales';
@@ -14,5 +15,6 @@
 
 @import 'carruseles';
 @import 'cards';
+@import 'form';
 
 

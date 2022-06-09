@@ -18,6 +18,6 @@ header{
 /*footer*/
 
 footer {
-    @include fondoimg( '../img/fondo-violta-nuevo.png', top, cover );
+    @include fondoimg( '../img/footer.png', top, cover );
     padding: 1em;
 }
