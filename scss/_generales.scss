@@ -1,36 +1,45 @@
-/*****GENERALES*/
+/*GENERALES*/
+
+body {
+    background-color: $color-claro;
+    font-family: $tipo-texto;
+}
+
 section{
-    padding: 4em 0;
+    padding:1.875rem 0;
 }
 
 a,
 a:link,
 a:visited {
     text-decoration: none;
+
 }
 
-/*botones*/
-.btn {
-    margin-right: 1em;
-    border-radius: 1.5rem;
+img {
+    max-width: 100%;
 }
 
-.boton-relleno {
-    background-color: #F7A940;
-    color: #FDF5EF;
+.w-40 {
+    width: 45%;
 }
 
-.boton-outline {
-    border: 2px solid #F7A940;
-    color: #F7A940;
-}
-
-
-.separador{
+.center {
     text-align: center;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
+}
+
+
+.fondo-amarillo {
+    @include fondoimg( '../img/fondo-amarillo.png', center, cover );
+}
+
+.fondo-amarillo-chico {
+    background-image: url(../img/chico-amarillo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bi-star-fill {
+    color: #F7A940
 }

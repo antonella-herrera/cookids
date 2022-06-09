@@ -1,10 +1,13 @@
 /*header*/
 
 header{
-    /*a{ elegir tipo
+           background-color: $color-claro;
+           position: sticky;
 
-    }*/
-    position: sticky;
+           .logo span{
+               color: $color-texto;
+           }
+    
     @media (min-width: 992px) {
         .navbar-collapse{
             flex-grow: unset;
@@ -12,3 +15,9 @@ header{
     }
 }
 
+/*footer*/
+
+footer {
+    @include fondoimg( '../img/fondo-violta-nuevo.png', top, cover );
+    padding: 1em;
+}

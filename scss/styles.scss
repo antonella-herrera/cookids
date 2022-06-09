@@ -5,13 +5,14 @@
 }
 
 @import 'variables-mixins';
-@import 'tipografias';
 @import 'generales';
+@import 'tipografias';
+@import 'botones';
 @import 'header-footer';
+@import 'secciones';
+@import 'portada';
 
+@import 'carruseles';
+@import 'cards';
 
-.portada{
-    background-image: url(../img/portada.jpg);
-    height: 100vh;
-}
 

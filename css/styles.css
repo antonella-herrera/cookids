@@ -31,7 +31,25 @@ h2,
     font-weight: 900;
 }
 
+h1 span,
+h2 span,
+.logo span{
+    color: #554444;
+}
+h1{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 47px;
 
+}
+
+h2{
+    padding:23px;
+    margin: 0;
+    text-align: center;
+}
 header {
     background-color: #F8F5F4;
 }
@@ -44,17 +62,11 @@ p span{
 .btn {
     margin-right: 1em;
     border-radius: 1.5rem;
+    font-weight: 600;
+    min-width: 198px;
 }
 
-.separador {
-    text-align: center;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    
-}
+
 
 .boton-relleno {
     background-color: #9B33BD;
@@ -70,6 +82,17 @@ p span{
     color: #9B33BD;
 }
 
+
+.separador {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    
+}
+
 .flex-wrap-justify {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -77,7 +100,6 @@ p span{
 
 .center {
     text-align: center;
-    margin-bottom: 1em;
 }
 
 .w-40 {
@@ -164,6 +186,7 @@ footer {
     background-image: url(..//img/fondo-violta-nuevo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1em;
 }
 
 .portada {
@@ -246,18 +269,9 @@ form .btn {
 .iconos-pago{
     width: 80px;
 }
-@media screen and (min-width:768px) {
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-}
 
 @media screen and (min-width:920px) {
-
-    .galeria {
-        grid-template-columns: repeat(4, 1fr);
-    }
 
     .testimonios-cards {
         flex-direction: row;

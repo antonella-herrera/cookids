@@ -1,6 +1,11 @@
-$color-pricipal:#000;
-$color-secundario:#fff;
-$color-teriario: #f0f0;
+$color-texto:#554444;
+$color-interacciones:#9B33BD;
+$color-titulos: #FF5B7C;
+$color-claro:#F8F5F4;
+
+$tipo-titulo:'Rubik', sans-serif;
+$tipo-texto:'Poppins', sans-serif;
+
 
 //mixin flex
 @mixin flex($direction, $justify, $aling){
@@ -14,4 +19,11 @@ $color-teriario: #f0f0;
 @mixin fondo ($fondo, $color-tipo) {
     background-color: $fondo;
     color: $color-tipo;
+}
+
+@mixin fondoimg($url, $position, $size){
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
 }

@@ -11,7 +11,7 @@
   <!--iconos boostrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <!--CSS-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="estilos/styles.css">
   <title>Cookids club</title>
 </head>
 
@@ -58,14 +58,14 @@
       <div class="container">
         <article class="row">
           <div class="col-12 col-md-12 col-lg-6">
-            <img src="img/portada-cel.png" alt="">
+            <img src="img/portada-cel.png" alt="" class="img-portada d-block">
           </div>
-          <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center flex-column">
+          <div class="portada-texto col-12 col-md-12 col-lg-6 d-flex justify-content-center flex-column">
             <h1>¡Cociná y divertité <span>en familia!</span></h1>
-            <h2>Te llevamos cajas todos los meses, pensadas para que los màs chicos aprendan cocinando. </h2>
+            <p>Te llevamos cajas todos los meses, pensadas para que los más chicos aprendan cocinando.  </p>
             <div class="d-flex">
-              <a href="" class="btn boton-relleno">suscribite</a>
-              <a href="" class="btn boton-outline">conocenos </a>
+              <a href="" class="btn boton-relleno">Subscribité</a>
+            <!--  <a href="" class="btn boton-outline">conocenos </a> -->
             </div>
           </div>
         </article>
@@ -157,12 +157,12 @@
       </article>
     </section>
     <!--separador-->
-    <section class="fondo-amarillo-chico">
+    <section class="fondo-amarillo separador">
       <div class="container d-flex flex-column justify-content-center align-items-lg-center">
-        <div style="width:150px">
+        <div class="burbuja">
           <img src="img/burbuja-testimonio.png" alt="" class="d-block w-100">
         </div>
-        <p class="h4 center">“Lograr que los niños incorporen nuevos alimentos puede ser dificíl. Involucrarlos en la
+        <p class="center">“Lograr que los niños incorporen nuevos alimentos puede ser dificíl. Involucrarlos en la
           cocina logrará que relacionen estos alimentos con algo divertido.”</p>
         <span> Daniela, psicopedagoga </span>
       </div>
@@ -239,14 +239,14 @@
     <!--unite al club -->
     <section class="unite" id="unite">
       <div class="container">
-        <h2 class="center">Unité al club</h2>
+        <h2 class="center">¡Elegí el plan ideal para tu <span>familia!</span></h2>
         <!--cards-->
         <div class="row">
           <div class="col-12 col-md-12 col-lg-4">
             <div class="card">
               <img src="img/caja-suscripciones.png" class="card-img-top" alt="suscripcion mini chef">
               <div class="card-body">
-                <div>
+                <div class="titulo-suscripciones">
                   <h5 class="card-title">Mifi Chef</h5>
                   <h3>$4500</h3>
                   <p>Por caja, por única vez</p>
@@ -268,7 +268,12 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="card">
-              <img src="img/caja-suscripciones.png" class="card-img-top" alt="suscripcion mini chef">
+              <div class="popular">
+                <img src="img/popular.png" alt="">
+              </div>
+              <div>
+                <img src="img/caja-suscripciones.png" class="card-img-top" alt="suscripcion mini chef">
+              </div>
               <div class="card-body">
                 <div>
                   <h5 class="card-title">Chef</h5>
@@ -418,9 +423,9 @@
       </article>
       <!--galeria-->
       <article class="galeria container">
-        <div>
-          <h2 class="center">¡Compartinos tu expericia!</h2>
-          <p class="center">Contanos sobre tu experiencia y sumaté a la comunidad. Subilo a tus redes etiquetanos y
+        <div class="titulos-secciones">
+          <h2 class="center">¡Compartinos <span>tu expericia!</span></h2>
+          <p class="center margin-p">Contanos sobre tu experiencia y sumaté a la comunidad. Subilo a tus redes etiquetanos y
             colocá #LlegoCookidsClub</p>
         </div>
         <div class="row">
@@ -442,28 +447,31 @@
 
           <div class="col-12 col-md-12 col-lg-6"><img src="img/galeria-azucar.jpg" alt="" class="d-bock w-100"></div>
         </div>
-
       </article>
 
 
     </section>
         <!--creadoras-->
         <section class="container creadoras" id="creadoras">
-          <div>
-            <h2 class="center">¡Conoce a las creadoras del club!</h2>
-            <p class="center">Cookids Club inicio con la idea de crear una actividad para que las familias se divertan mezclando las dos pasiones de sus creadoras. Ademas estan actividades estan respaldas por profeciones.</p>
+          <div class="titulos-secciones">
+            <h2 class="center">¡Conoce a las <span>creadoras del club!</span></h2>
+            <p class="center ">Cookids Club inicio con la idea de crear una actividad para que las familias se divertan mezclando las dos pasiones de sus creadoras. Ademas estan actividades estan respaldas por profeciones.</p>
           </div>
           
           <article class="row">
-            <div class="col-12 col-md-12 col-lg-6">
-              <img src="img/karina-gao.png" alt="Retrato de Karina Gao" class="d-block w-100">
+            <div class="col-12 col-md-12 col-lg-6 card">
+              <div class="retrato-creadora">
+                <img src="img/karina-gao.png" alt="Retrato de Karina Gao" class="d-block w-100">
+              </div>
               <h4 class="center"><span>Karina Gao,</span> Fundora</h4>
               <p class="center">Reconocida chef</p>
             </div>
-            <div class="col-12 col-md-12 col-lg-6">
-              <img src="img/Sandra-campomar.png" alt="Retrato de Sandra Campomar" class="d-block w-100">
-              <h4 class="center"><span>Sandra campomar,</span> Fundora</h4>
-              <p class="center">Creadora de buenos aires para chicos </p>
+            <div class="col-12 col-md-12 col-lg-6 card">
+              <div class="retrato-creadora">
+                <img src="img/Sandra-campomar.png" alt="Retrato de Sandra Campomar" class="d-block w-100">
+              </div>
+              <h4 class="center"><span>Sandra Campomar,</span> Fundora</h4>
+              <p class="center">Creadora de @buenosairesparachicos</p>
             </div>
           </article>
         </section>
@@ -474,8 +482,8 @@
 
     <!--contacto-->
     <section class="container" id="contacto">
-      <div>
-        <h2 class="center">Contacto</h2>
+      <div class="titulos-secciones">
+        <h2 class="center">¿Te quedate con dudas?</h2>
         <p class="center">Escribinos, estemos atentos para responder todas las dudas que tengas. Dejanos tus datos para
           poder ayudarte. </p>
       </div>

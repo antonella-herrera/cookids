@@ -1,0 +1,48 @@
+/*Carrusel*/
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+}
+
+/*TESTIMONIOS*/
+/*CARRUSEL*/
+.testimonios .carousel {
+    height: 90vh;
+    @media screen and (min-width:920px){
+        height: 70vh;
+    }
+}
+
+.testimonio-carrusel {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    @media screen and (min-width:920px){
+        width: 70%;
+    }
+}
+
+
+.testimonios-cards {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    height: 70vh;
+    @media screen and (min-width:920px) {
+
+        .testimonios-cards {
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+}
+/*
+.texto-testimonio span {
+    color: #acaaa8;
+}*/
+
+.texto-testimonio {
+    @media screen and (min-width:920px){
+    margin-left: 1em;
+    width: 50%;}
+}

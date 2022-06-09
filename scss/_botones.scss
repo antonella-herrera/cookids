@@ -1,0 +1,19 @@
+/*botones*/
+.btn {
+    margin-right: 1em;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    min-width: 175px;
+}
+
+
+
+.boton-relleno {
+    background-color: $color-interacciones;
+    color: #EADBF1;
+}
+
+.boton-outline {
+    border: 2px solid $color-interacciones;
+    color: $color-interacciones;
+}
