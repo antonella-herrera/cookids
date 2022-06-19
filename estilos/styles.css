@@ -64,7 +64,7 @@ h2,
 .logo {
   font-family: "Rubik", sans-serif;
   color: #FF5B7C;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h1 span,
@@ -76,9 +76,15 @@ h2 span,
 h1 {
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   line-height: 47px;
+}
+@media screen and (min-width: 920px) {
+  h1 {
+    font-size: 60px;
+    line-height: 76px;
+  }
 }
 
 h2 {
@@ -101,6 +107,7 @@ h4 span {
   border-radius: 1.5rem;
   font-weight: 600;
   min-width: 175px;
+  text-transform: uppercase;
 }
 
 .boton-relleno {
@@ -145,6 +152,19 @@ footer {
   background-repeat: no-repeat;
   padding: 1em;
 }
+footer .logo {
+  padding-bottom: 1rem;
+  max-width: 260px;
+}
+footer p {
+  line-height: 24px;
+  max-width: 260px;
+}
+@media (min-width: 992px) {
+  footer .links {
+    padding-left: 3rem;
+  }
+}
 
 /*INICIO*/
 .inicio h2 {
@@ -162,6 +182,7 @@ footer {
   content: url("../img/lista.svg");
   width: 37px;
   margin-right: 14px;
+  margin-bottom: 30px;
 }
 .inicio ul li h3 {
   margin-bottom: 0;
@@ -174,7 +195,10 @@ footer {
 }
 .inicio img {
   padding-left: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.5em;
+  max-width: 504px;
 }
 
 .funcion .card img {
@@ -278,9 +302,18 @@ footer {
   }
 }
 
+.galeria .row {
+  margin: 0;
+  padding: 0;
+}
+.galeria .col-6, .galeria .col-md-6, .galeria .col-lg-3, .galeria .col-12, .galeria .col-md-12, .galeria .col-lg-6 {
+  margin: 0;
+  padding: 0;
+}
+
 /*PORTADA*/
 .portada {
-  background-image: url("../img/fondo-violta-nuevo.png");
+  background-image: url("../img/fondo-rosa.png");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;

@@ -20,4 +20,18 @@ header{
 footer {
     @include fondoimg( '../img/footer.png', top, cover );
     padding: 1em;
+    .logo{
+        padding-bottom: 1rem;
+        max-width: 260px;
+    }
+    p{
+        line-height: 24px;
+        max-width: 260px;
+    }
+
+    .links{
+        @media (min-width: 992px) {
+            padding-left: 3rem;
+        }
+    }
 }
