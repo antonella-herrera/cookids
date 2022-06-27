@@ -1,13 +1,16 @@
 /*PORTADA*/
 .portada {
     @include fondoimg('../img/fondo-rosa.png', bottom, cover);
-    height: 100vh;
+    height: fit-content;
     margin-top: 50px;
     padding: 1em;
+    padding-bottom: 2.5em;
+
 
     @media screen and (min-width:920px) {
         flex-direction: row;
         padding: 0;
+        height: 100vh;
     }
 
     .img-portada {

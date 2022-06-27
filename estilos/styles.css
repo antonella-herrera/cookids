@@ -120,6 +120,10 @@ h4 span {
   font-weight: 800;
 }
 
+.negrita {
+  font-weight: 600;
+}
+
 /*botones*/
 .btn {
   margin-right: 1em;
@@ -456,14 +460,18 @@ footer .redes i {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 50px;
   padding: 1em;
+  padding-bottom: 2.5em;
 }
 @media screen and (min-width: 920px) {
   .portada {
     flex-direction: row;
     padding: 0;
+    height: 100vh;
   }
 }
 .portada .img-portada {
@@ -640,7 +648,10 @@ footer .redes i {
 }
 @media screen and (min-width: 992px) {
   .unite .card {
-    height: 100%;
+    height: 95%;
+  }
+  .unite .card .card-title {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 920px) {
