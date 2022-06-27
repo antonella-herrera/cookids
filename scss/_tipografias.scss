@@ -29,9 +29,15 @@ line-height: 47px;
 }
 
 h2{
-    padding:23px;
+/*    padding:23px;*/
     margin: 0;
+    margin-bottom: 25px;
     text-align: center;
+    font-size: 30px;
+    @media screen and (min-width:992px) {
+        font-size: 40px;
+        
+    }
 }
 
 p span{

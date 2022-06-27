@@ -11,8 +11,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section, .galeria {
+section {
   padding: 1.875rem 0;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+  section {
+    margin: 4.5rem 0;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 50px;
 }
 
 a,
@@ -56,6 +66,8 @@ img {
 
 .bi-star-fill {
   color: #F7A940;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 /*tipografias*/
@@ -88,9 +100,16 @@ h1 {
 }
 
 h2 {
-  padding: 23px;
+  /*    padding:23px;*/
   margin: 0;
+  margin-bottom: 25px;
   text-align: center;
+  font-size: 30px;
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 p span {
@@ -129,16 +148,63 @@ button {
   text-align: start;
 }
 
+#contacto .boton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-right: 0;
+  margin-top: 1rem;
+}
+
+.boton-centro {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 992px) {
+  .boton-centro .btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.link-chico {
+  color: #9B33BD;
+  text-transform: uppercase;
+}
+
 /*header*/
 header {
   background-color: #F8F5F4;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 header .logo span {
   color: #554444;
 }
+header .navbar-light .navbar-nav .nav-link {
+  color: #9B33BD;
+  font-weight: 600;
+  font-size: 16px;
+}
+header .navbar-nav {
+  height: 100vh;
+}
+@media screen and (min-width: 992px) {
+  header .navbar-nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 @media (min-width: 992px) {
+  header .btn {
+    margin-left: 1rem;
+  }
   header .navbar-collapse {
     flex-grow: unset;
   }
@@ -165,10 +231,19 @@ footer p {
     padding-left: 3rem;
   }
 }
+footer .redes {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer .redes i {
+  color: #9B33BD;
+  margin-right: 1rem;
+}
 
 /*INICIO*/
 .inicio h2 {
   text-align: start;
+  padding-left: 2rem;
 }
 .inicio ul {
   padding-right: 0.5rem;
@@ -238,6 +313,12 @@ footer p {
   max-width: 699px;
   margin: 0 auto;
 }
+@media screen and (min-width: 992px) {
+  .titulos-secciones h2 {
+    margin-bottom: 13px;
+    line-height: 47px;
+  }
+}
 .titulos-secciones p {
   padding-bottom: 1.875rem;
   line-height: 30px;
@@ -247,12 +328,14 @@ footer p {
 .creadoras .retrato-creadora {
   min-height: 260px;
   max-width: 455px;
+  margin: 20px auto;
 }
 
 .marcas {
   border-top: 1px solid rgba(85, 68, 68, 0.5);
   border-bottom: 1px solid rgba(85, 68, 68, 0.5);
   padding: 20px 0;
+  margin-top: 4rem;
 }
 .marcas > div {
   max-width: 846px;
@@ -311,6 +394,62 @@ footer p {
   padding: 0;
 }
 
+.img-grande-1 {
+  grid-area: img-grande-1;
+}
+
+.img-grande-2 {
+  grid-area: img-grande-2;
+}
+
+.img-chica-1 {
+  grid-area: img-chica-1;
+}
+
+.img-chica-2 {
+  grid-area: img-chica-2;
+}
+
+.img-chica-3 {
+  grid-area: img-chica-3;
+}
+
+.img-chica-4 {
+  grid-area: img-chica-4;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-areas: "img-grande-1 img-grande-1" "img-chica-1  img-chica-2" "img-chica-3 img-chica-4" "img-grande-2 img-grande-2";
+  gap: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  .galeria-grid {
+    grid-template-areas: "img-grande-1 img-grande-1 img-chica-1  img-chica-2" "img-chica-3 img-chica-4 img-grande-2 img-grande-2";
+    gap: 1rem;
+  }
+}
+
+#contacto .imagen {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #contacto .imagen {
+    margin-right: auto;
+  }
+}
+
+.marcas > div > div {
+  margin: 2rem 0;
+  /*
+  @media screen and (min-width:772px) {
+      margin: unset;
+
+  }*/
+}
+
 /*PORTADA*/
 .portada {
   background-image: url("../img/fondo-rosa.png");
@@ -318,6 +457,7 @@ footer p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  margin-top: 50px;
   padding: 1em;
 }
 @media screen and (min-width: 920px) {
@@ -371,11 +511,19 @@ footer p {
   }
 }
 .testimonios .carousel {
-  height: 90vh;
+  height: 100vh;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .testimonios .carousel {
     height: 70vh;
+  }
+  .testimonios .carousel-inner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+  }
+  .testimonios .carousel-indicators {
+    margin-bottom: 0;
   }
 }
 .testimonios-carrusel {
@@ -384,14 +532,13 @@ footer p {
 }
 @media screen and (min-width: 920px) {
   .testimonios-carrusel {
-    width: 70%;
+    width: 80%;
   }
 }
 .testimonios-cards {
   flex-direction: column;
   text-align: center;
   padding: 1em;
-  height: 70vh;
   max-width: 843px;
   margin: 0 auto;
 }
@@ -399,6 +546,7 @@ footer p {
   .testimonios-cards {
     flex-direction: row;
     text-align: left;
+    height: 70vh;
   }
 }
 .testimonios-cards img {
@@ -408,6 +556,9 @@ footer p {
   .testimonios-texto {
     margin-left: 1em;
     width: 50%;
+  }
+  .testimonios-texto p {
+    max-width: 374px;
   }
 }
 
@@ -483,6 +634,14 @@ footer p {
   margin: 1.25rem auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .unite .card {
+    height: 100%;
+  }
 }
 @media screen and (min-width: 920px) {
   .unite .mini-chef {
@@ -512,6 +671,15 @@ footer p {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.beneficios .card-title {
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.beneficios .card-text {
+  margin-bottom: 10px;
 }
 
 /*form*/

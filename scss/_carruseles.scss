@@ -16,18 +16,25 @@
         }
     }
     .carousel {
-        height: 90vh;
-        @media screen and (min-width:920px){
+        height: 100vh;
+        @media screen and (min-width:768px){
             height: 70vh;
+            &-inner{
+                padding-left: 5rem;
+                padding-right: 5rem;
+                padding-bottom: 2rem;
         }
-    
+        &-indicators{
+            margin-bottom: 0;
+        }
 
     }
+}
     &-carrusel {
         margin: 0 auto;
         margin-bottom: 1em;
         @media screen and (min-width:920px){
-            width: 70%;
+            width: 80%;
         }
     }
 
@@ -35,13 +42,13 @@
         flex-direction: column;
         text-align: center;
         padding: 1em;
-        height: 70vh;
         max-width: 843px;
         margin: 0 auto;
 
         @media screen and (min-width:920px) {
                 flex-direction: row;
                 text-align: left;
+                height: 70vh;
         }
 
         img{
@@ -52,7 +59,12 @@
     &-texto{
         @media screen and (min-width:920px){
         margin-left: 1em;
-        width: 50%;}
+        width: 50%;
+        p{
+            max-width: 374px;
+        }
+    
+    }
     }
     
 }

@@ -2,13 +2,32 @@
 
 header{
            background-color: $color-claro;
-           position: sticky;
+           position: fixed;
+           top:0;
+           width: 100%;
+           z-index: 1000;
 
            .logo span{
                color: $color-texto;
            }
+           .navbar-light .navbar-nav .nav-link{
+            color: $color-interacciones;
+            font-weight: 600;
+            font-size: 16px;
+           }
+           .navbar-nav{
+            height: 100vh;
+            @media screen and (min-width:992px) {
+                height: fit-content;
+                
+            }
+           }
+
     
     @media (min-width: 992px) {
+        .btn{
+            margin-left: 1rem;
+        }
         .navbar-collapse{
             flex-grow: unset;
         }  
@@ -32,6 +51,14 @@ footer {
     .links{
         @media (min-width: 992px) {
             padding-left: 3rem;
+        }
+    }
+    .redes{
+        list-style-type: none;
+        padding-left: 0;
+        i{
+            color: $color-interacciones;
+            margin-right: 1rem;
         }
     }
 }

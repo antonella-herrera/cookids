@@ -5,10 +5,17 @@ body {
     font-family: $tipo-texto;
 }
 
-section, .galeria{
+section{
     padding:1.875rem 0;
+    margin-top: 2rem;
+    @media screen and (min-width:992px) {
+        margin: 4.5rem 0;
+        
+    }
 }
-
+section[id]{
+    scroll-margin-top: 50px;
+}
 a,
 a:link,
 a:visited {
@@ -44,5 +51,7 @@ img {
 }
 
 .bi-star-fill {
-    color: #F7A940
+    color: #F7A940;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
