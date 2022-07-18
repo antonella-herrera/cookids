@@ -45,9 +45,11 @@ footer {
     }
     p{
         line-height: 24px;
-        max-width: 260px;
+        
     }
-
+    .link{
+        color:$color-interacciones;
+    }
     .links{
         @media (min-width: 992px) {
             padding-left: 3rem;

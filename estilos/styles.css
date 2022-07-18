@@ -228,7 +228,9 @@ footer .logo {
 }
 footer p {
   line-height: 24px;
-  max-width: 260px;
+}
+footer .link {
+  color: #9B33BD;
 }
 @media (min-width: 992px) {
   footer .links {
@@ -446,12 +448,11 @@ footer .redes i {
 }
 
 .marcas > div > div {
-  margin: 2rem 0;
-  /*
-  @media screen and (min-width:772px) {
-      margin: unset;
+  margin: 2rem 0; /*
+@media screen and (min-width:772px) {
+    margin: unset;
 
-  }*/
+}*/
 }
 
 /*PORTADA*/
